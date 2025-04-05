@@ -1,0 +1,6 @@
+[submodule "deps/rtmidi"]
+	path = deps/rtmidi
+	url = https://github.com/thestk/rtmidi.git
+[submodule "deps/sfml"]
+	path = deps/sfml
+	url = https://github.com/SFML/SFML.git

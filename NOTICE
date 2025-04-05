@@ -1,0 +1,8 @@
+This project uses RtMidi (c) 2003-2023 by Gary P. Scavone, licensed under a permissive license
+See licenses/rtmidi_LICENSE.txt for details.
+
+This project uses SFML (Simple and Fast Multimedia Library), licensed under the zlib license.
+See licenses/sfml_LICENSE.txt for details.
+
+This project uses Noto Sans Mono typeface, licensed under the SIL Open Font License v1.1.
+See license/noto-sans-mono_LICENSE.txt for details
