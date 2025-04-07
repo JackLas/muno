@@ -13,7 +13,9 @@ SpaceBeforeParens: ControlStatements
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 AlignAfterOpenBracket: Align
 AlignOperands: true
+EmptyLineBeforeAccessModifier: Never
 EmptyLineAfterAccessModifier: Never
+AccessModifierOffset: -4
 ReflowComments: true
 ColumnLimit: 100
 

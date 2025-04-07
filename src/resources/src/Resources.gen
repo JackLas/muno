@@ -1,0 +1,19 @@
+// Copyright (c) 2025 Yevhenii Kryvyi
+// SPDX-License-Identifier: MIT
+
+#include <array>
+
+#include "Resources.hpp"
+#include "SFML/System/MemoryInputStream.hpp"
+
+namespace muno
+{
+
+sf::InputStream& Resources::font() const
+{
+    static constexpr std::array data{0x01, 0x02};
+    static sf::MemoryInputStream stream(data.data(), data.size());
+    return stream;
+}
+
+} // namespace muno
