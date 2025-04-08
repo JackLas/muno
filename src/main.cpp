@@ -3,6 +3,7 @@
 
 #include <sstream>
 
+#include "Resources.hpp"
 #include "RtMidi.h"
 #include "SFML/Graphics/Font.hpp"
 #include "SFML/Graphics/RenderWindow.hpp"
@@ -29,7 +30,9 @@ int main()
         labelText << midi->getPortName(i) << "\n";
     }
 
-    sf::Font labelFont("resources/fonts/noto-sans-mono.ttf"); // temporary
+    muno::Resources res;
+
+    sf::Font labelFont(res.font());
     sf::Text label(labelFont, labelText.str());
 
     auto window = sf::RenderWindow(sf::VideoMode({1280u, 720u}), "midi-sfml-test");

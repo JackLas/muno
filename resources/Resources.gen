@@ -11,8 +11,8 @@ namespace muno
 
 sf::InputStream& Resources::font() const
 {
-    // MUNO-GEN-PH: data~datasize~fonts/noto-sans-mono.ttf
-    static sf::MemoryInputStream stream(data, datasize);
+    static constexpr std::array data{0x01, 0x02};
+    static sf::MemoryInputStream stream(data.data(), data.size());
     return stream;
 }
 
